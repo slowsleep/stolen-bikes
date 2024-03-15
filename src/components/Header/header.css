@@ -1,0 +1,8 @@
+header {
+    background-color: #22223B;
+    padding: 0 1em;
+}
+
+header > div > h1 {
+    color: #F2E9E4;
+}
