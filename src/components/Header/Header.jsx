@@ -24,8 +24,8 @@ const Header = () => {
                     </Link>
                 </nav>
                 <div>
-                    <Button variant="contained">Войти</Button>
-                    <Button variant="contained">Зарегистрироваться</Button>
+                    <Link><Button>Войти</Button></Link>
+                    <Link to="sign-up" component={RouterLink}><Button>Зарегистрироваться</Button></Link>
                 </div>
             </Box>
         </header>
