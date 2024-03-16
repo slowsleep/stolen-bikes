@@ -16,6 +16,7 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 const CreateCase = () => {
     return (
         <div>
+            <h1>Сообщение о краже</h1>
             <form
                 style={{
                     display: "flex",
