@@ -7,6 +7,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Link as RouterLink } from "react-router-dom";
 import Link from "@mui/material/Link";
+import Button from "@mui/material/Button";
 
 import list from "../utils/mock/caseList.json";
 
@@ -21,7 +22,6 @@ const CaseList = () => {
                         <TableCell align="right">licenseNumber</TableCell>
                         <TableCell align="right">type</TableCell>
                         <TableCell align="right">ownerFullName</TableCell>
-                        <TableCell align="right">clientId</TableCell>
                         <TableCell align="right">createdAt</TableCell>
                         <TableCell align="right">updatedAt</TableCell>
                         <TableCell align="right">color</TableCell>
@@ -29,13 +29,16 @@ const CaseList = () => {
                         <TableCell align="right">officer</TableCell>
                         <TableCell align="right">description</TableCell>
                         <TableCell align="right">resolution</TableCell>
+                        <TableCell align="right">удалить</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {list.cases.map((row) => (
                         <TableRow key={row.id}>
                             <TableCell component="th" scope="row">
-                                <Link to={`${row.id}`} component={RouterLink}>{row.id}</Link>
+                                <Link to={`${row.id}`} component={RouterLink}>
+                                    {row.id}
+                                </Link>
                             </TableCell>
                             <TableCell align="right">{row.status}</TableCell>
                             <TableCell align="right">
@@ -45,7 +48,6 @@ const CaseList = () => {
                             <TableCell align="right">
                                 {row.ownerFullName}
                             </TableCell>
-                            <TableCell align="right">{row.clientId}</TableCell>
                             <TableCell align="right">{row.createdAt}</TableCell>
                             <TableCell align="right">{row.updatedAt}</TableCell>
                             <TableCell align="right">{row.color}</TableCell>
@@ -56,6 +58,9 @@ const CaseList = () => {
                             </TableCell>
                             <TableCell align="right">
                                 {row.resolution}
+                            </TableCell>
+                            <TableCell align="right">
+                                <Button color="error">&#215;</Button>
                             </TableCell>
                         </TableRow>
                     ))}
