@@ -15,12 +15,18 @@ const Header = () => {
                     alignItems: "center",
                 }}
             >
-                <Link to="/" component={RouterLink} underline="none">
+                <Link to="/" component={RouterLink} underline="none" color="#F2E9E4">
                     <h1>StolenBikes</h1>
                 </Link>
-                <nav>
+                <nav style={{display: "flex", columnGap: "1em"}}>
                     <Link to="/create-case" component={RouterLink}>
                         Оставить заявку
+                    </Link>
+                    <Link to="/cases" component={RouterLink}>
+                        Кражи
+                    </Link>
+                    <Link to="/officers" component={RouterLink}>
+                        Сотрудники
                     </Link>
                 </nav>
                 <div>
