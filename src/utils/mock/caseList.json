@@ -1,0 +1,49 @@
+{
+    "cases": [
+        {
+            "id": "1",
+            "status": "new",
+            "licenseNumber": "1Basdmk3",
+            "type": "general",
+            "ownerFullName": "Иванов Иван Иванович",
+            "clientId": "1test1",
+            "createdAt": "15-03-2024",
+            "updatedAt": "",
+            "color": "",
+            "date": "",
+            "officer": "",
+            "description": "",
+            "resolution": ""
+        },
+        {
+            "id": "2",
+            "status": "in_progress",
+            "licenseNumber": "mfi3Ube3i2",
+            "type": "general",
+            "ownerFullName": "Иванова Мария Ивановна",
+            "clientId": "1test1",
+            "createdAt": "16-03-2024",
+            "updatedAt": "",
+            "color": "",
+            "date": "",
+            "officer": "",
+            "description": "Я отвернулась и велосипед пропал.",
+            "resolution": ""
+        },
+        {
+            "id": "3",
+            "status": "done",
+            "licenseNumber": "kd6Ubd63",
+            "type": "sport",
+            "ownerFullName": "Николаев Николай Николаевич",
+            "clientId": "1test1",
+            "createdAt": "14-03-2024",
+            "updatedAt": "17-03-2024",
+            "color": "",
+            "date": "13-03-2024",
+            "officer": "",
+            "description": "Есть запись видеонаблюдения, как вор ворует мой велосипед.",
+            "resolution": "Вор найден. Компенсация возвращена."
+        }
+    ]
+}

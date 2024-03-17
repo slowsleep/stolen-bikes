@@ -1,0 +1,31 @@
+{
+    "officers": [
+        {
+            "id": "1",
+            "email": "test@test.test",
+            "firstName": "Константин",
+            "lastName": "Андреев",
+            "password": "111",
+            "clientId": "1test1",
+            "approved": "true"
+        },
+        {
+            "id": "2",
+            "email": "a@a.a",
+            "firstName": "Лаура",
+            "lastName": "Петрова",
+            "password": "222",
+            "clientId": "1test1",
+            "approved": "false"
+        },
+        {
+            "id": "3",
+            "email": "b@b.b",
+            "firstName": "Евгений",
+            "lastName": "Желтый",
+            "password": "333",
+            "clientId": "1test1",
+            "approved": "false"
+        }
+    ]
+}
