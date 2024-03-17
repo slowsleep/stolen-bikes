@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Button from "@mui/material/Button"
 import caseList from "../utils/mock/caseList.json";
 import { getElementById } from "../utils/features/getElementById";
 
@@ -26,6 +27,9 @@ const SingleCase = () => {
             <p>Ответственный сотрудник: {oneCase.officer}</p>
             <p>Описание: {oneCase.description}</p>
             <p>Заключение: {oneCase.resolution}</p>
+            <Button variant="contained" color="primary">редактировать</Button>
+            <Button variant="contained" color="success">сохранить</Button>
+            <Button variant="contained" color="inherit">отменить</Button>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Button from "@mui/material/Button"
 import officerList from "../utils/mock/officerList.json";
 import { getElementById } from "../utils/features/getElementById";
 
@@ -20,6 +21,9 @@ const SingleOfficer = () => {
             <p>Пароль: {officer.password}</p>
             <p>clientId: {officer.clientId}</p>
             <p>Подтвержден: {officer.approved}</p>
+            <Button variant="contained" color="primary">редактировать</Button>
+            <Button variant="contained" color="success">сохранить</Button>
+            <Button variant="contained" color="inherit">отменить</Button>
         </div>
     );
 };
